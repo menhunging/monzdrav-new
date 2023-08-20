@@ -1,0 +1,405 @@
+@media (max-width: 1199px) {
+  .header {
+    .title {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    .headerContent-right {
+      padding-top: 0;
+    }
+
+    .headerContent-right__row {
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px 30px;
+    }
+
+    .btn {
+      margin: 0 auto;
+    }
+  }
+
+  .menu {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .titlePage-section--img .titlePage-section__text {
+    padding-left: calc(50% - 110px);
+  }
+
+  .catalog-list {
+    gap: 10px 20px;
+  }
+
+  .catalog-item {
+    padding: 18px;
+  }
+
+  .product-section__inner {
+    gap: 15px;
+  }
+
+  .product-section__info {
+    padding: 25px;
+  }
+
+  .cooperation-item__body {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .header {
+    padding: 15px 0;
+
+    .headerContent {
+      align-items: center;
+    }
+
+    .headerContent-right__row {
+      gap: 10px 10px;
+      justify-content: space-between;
+      padding: 0 10px;
+
+      & + .headerContent-right__row {
+        margin-top: 5px;
+      }
+    }
+  }
+
+  .menu-list {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px 30px;
+  }
+
+  .titlePage-section__text {
+    padding: 25px;
+  }
+
+  .titlePage-section--img .titlePage-section__text {
+    padding-left: calc(50% + 15px);
+  }
+
+  .catalog-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .product-section__inner {
+    grid-template-columns: 1fr 1fr;
+    padding-top: 30px;
+
+    .product-section__info {
+      &:last-child {
+        grid-column: 1/3;
+      }
+    }
+  }
+
+  .finished-products .catalog-item__picture {
+    width: calc(100% + 37px);
+    left: -19px;
+    top: -19px;
+    margin-bottom: -19px;
+  }
+
+  .cooperation-item__head .title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .cooperation-section--analitic {
+    .cooperation-list {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .cooperation-item {
+      grid-template-columns: 1fr;
+    }
+
+    .cooperation-item__body {
+      margin-top: 30px;
+    }
+  }
+
+  .cooperation-section--analitic .title {
+    max-width: 100%;
+  }
+
+  .cooperation-section--analitic .cooperation-item__head {
+    padding-right: 0;
+  }
+
+  .text-section .cols {
+    columns: auto;
+  }
+
+  .text-section .container {
+    width: 768px;
+  }
+
+  .catalog--box .catalog-item__picture {
+    height: 250px;
+  }
+
+  .catalog--box {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .header .headerContent {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .header {
+    .headerContent {
+      align-items: center;
+    }
+
+    .headerContent-right__row {
+      justify-content: center;
+
+      & + .headerContent-right__row {
+        display: none;
+      }
+    }
+
+    .title {
+      display: none;
+    }
+  }
+
+  .titlePage-section__caption {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .titlePage-section__text {
+    font-size: 18px;
+    line-height: 20px;
+    padding: 20px;
+
+    p {
+      & + p {
+        margin-top: 15px;
+      }
+    }
+  }
+
+  .recipesList .item .text {
+    .btn {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      position: relative;
+      max-width: 320px;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  .recipes-controls {
+    margin-top: 55px;
+  }
+
+  .catalog-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-section__picture .picture {
+    height: 364px;
+  }
+
+  .product-section__picture .title {
+    font-size: 18px;
+    line-height: 20px;
+    padding: 10px;
+  }
+
+  .cooperation-list {
+    grid-template-columns: 1fr;
+  }
+
+  .cooperation-item__body {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 15px;
+    margin-top: 15px;
+  }
+
+  .cooperation-section--analitic {
+    .cooperation-list {
+      grid-template-columns: 1fr;
+    }
+
+    .cooperation-item__body {
+      margin-top: 15px;
+    }
+  }
+
+  .text-section {
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 30px;
+
+    .container {
+      width: 100%;
+    }
+  }
+
+  .text-section h3 {
+    margin-top: 25px;
+  }
+
+  .text-section p + p {
+    margin-top: 15px;
+  }
+
+  .text-section .rows {
+    margin: 15px 0;
+    padding: 15px 0;
+  }
+
+  .text-section h3 + * {
+    margin-top: 35px;
+  }
+}
+
+@media (max-width: 639px) {
+  .titlePage-section__text {
+    font-size: 16px;
+    line-height: 18px;
+    padding: 20px;
+  }
+
+  .recipesList .item .text .btn {
+    max-width: 280px;
+  }
+
+  .titlePage-section--img {
+    img {
+      position: relative;
+      height: auto;
+      width: 100%;
+      max-width: 100%;
+      margin-bottom: 15px;
+    }
+  }
+
+  .titlePage-section--img .titlePage-section__text {
+    padding-left: 20px;
+  }
+
+  .catalog-list {
+    gap: 10px;
+  }
+
+  .btns-section {
+    padding-top: 30px;
+  }
+
+  #modal-checkout .modal__container {
+    max-width: 380px;
+    padding: 50px 25px;
+  }
+
+  #modal-checkout .modal__close {
+    right: 0;
+  }
+
+  .modalBlock .cap {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .modalBlock .text {
+    font-size: 15px;
+    line-height: 16px;
+    margin-top: 15px;
+  }
+
+  .modalBlock .inputList {
+    margin-top: 30px;
+  }
+
+  .product-section__inner {
+    grid-template-columns: 1fr;
+    padding-top: 16px;
+  }
+
+  .product-section__inner .product-section__info:last-child {
+    grid-column: 1/2;
+  }
+
+  #modal-result {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  #modal-result,
+  #modal-dev,
+  #modal-more,
+  #modal-checkout {
+    .modal__container {
+      padding: 50px 15px;
+    }
+    .modal__close {
+      right: 0;
+      top: -20px;
+    }
+  }
+
+  .text-section h3 {
+    margin-top: 15px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .text-section h3 + * {
+    margin-top: 20px;
+  }
+
+  .text-section h2 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .text-section .cols + h2 {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 479px) {
+  .header .headerContent {
+    display: grid;
+    grid-template-rows: 36px 36px;
+    align-items: start;
+  }
+
+  .header .headerContent-right {
+    width: 100%;
+  }
+
+  .header .headerContent-right__row {
+    padding: 0;
+  }
+
+  .menu {
+    font-size: 13px;
+    line-height: 15px;
+    padding: 0 10px;
+  }
+
+  .catalog-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 359px) {
+}
