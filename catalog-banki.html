@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="css/selectric.css" />
     <link rel='stylesheet' type='text/css' href='css/slick.css'>
     <link rel='stylesheet' type='text/css' href='css/micromodal.css'>
+    <link rel='stylesheet' type='text/css' href='css/ion.rangeSlider.min.css'>
     <link rel='stylesheet' type='text/css' href='css/style.css'>
     <link rel='stylesheet' type='text/css' href='css/style-pages.css'>
 
@@ -75,7 +76,19 @@
 
             <section class="catalog-banki">
                 <div class="container">
+
+                    <button class="btn-filter">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M8.72727 2.18182H2.18182V21.8182H8.72727V2.18182ZM0 0V24H10.9091V0H0ZM21.8182 2.18182H15.2727V10.9091H21.8182V2.18182ZM13.0909 0V13.0909H24V0H13.0909ZM15.2727 17.4545H21.8182V21.8182H15.2727V17.4545ZM13.0909 24V15.2727H24V24H13.0909Z"
+                                fill="#282922" />
+                        </svg>
+
+                        <span class="text">Фильтр</span>
+                    </button>
+
                     <div class="catalog-banki__inner">
+
                         <section class="catalog catalog--left">
                             <div class="catalog-list">
                                 <div class="catalog-item">
@@ -87,7 +100,7 @@
                                     <a href="#" class="catalog-item__name">Банка 100 мл PETG чёрная глянцевая
                                         1016453535</a>
 
-                                    <span class="availability">есть в наличии</span>
+                                    <span class="availability availability--yes">есть в наличии</span>
                                     <span class="count">87 р./шт</span>
                                     <a href="#" class="link">Заказать</a>
                                 </div>
@@ -101,7 +114,7 @@
                                     <a href="#" class="catalog-item__name">Банка 100 мл PETG чёрная глянцевая
                                         1016453535</a>
 
-                                    <span class="availability">есть в наличии</span>
+                                    <span class="availability availability--no">нет в наличии</span>
                                     <span class="count">87 р./шт</span>
                                     <a href="#" class="link">Заказать</a>
                                 </div>
@@ -115,7 +128,49 @@
                                     <a href="#" class="catalog-item__name">Банка 100 мл PETG чёрная глянцевая
                                         1016453535</a>
 
-                                    <span class="availability">есть в наличии</span>
+                                    <span class="availability availability--yes">есть в наличии</span>
+                                    <span class="count">87 р./шт</span>
+                                    <a href="#" class="link">Заказать</a>
+                                </div>
+
+                                <div class="catalog-item">
+
+                                    <picture class="catalog-item__picture">
+                                        <img src="img/pages/primer-img.jpg" alt="">
+                                    </picture>
+
+                                    <a href="#" class="catalog-item__name">Банка 100 мл PETG чёрная глянцевая
+                                        1016453535</a>
+
+                                    <span class="availability availability--yes">есть в наличии</span>
+                                    <span class="count">87 р./шт</span>
+                                    <a href="#" class="link">Заказать</a>
+                                </div>
+
+                                <div class="catalog-item">
+
+                                    <picture class="catalog-item__picture">
+                                        <img src="img/pages/primer-img.jpg" alt="">
+                                    </picture>
+
+                                    <a href="#" class="catalog-item__name">Банка 100 мл PETG чёрная глянцевая
+                                        1016453535</a>
+
+                                    <span class="availability availability--no">нет в наличии</span>
+                                    <span class="count">87 р./шт</span>
+                                    <a href="#" class="link">Заказать</a>
+                                </div>
+
+                                <div class="catalog-item">
+
+                                    <picture class="catalog-item__picture">
+                                        <img src="img/pages/primer-img.jpg" alt="">
+                                    </picture>
+
+                                    <a href="#" class="catalog-item__name">Банка 100 мл PETG чёрная глянцевая
+                                        1016453535</a>
+
+                                    <span class="availability availability--yes">есть в наличии</span>
                                     <span class="count">87 р./шт</span>
                                     <a href="#" class="link">Заказать</a>
                                 </div>
@@ -123,19 +178,88 @@
                         </section>
 
                         <section class="filter">
-                            <h2 class="title">Фильтр по параметрам</h2>
+                            <h2 class="filter-caption">Фильтр по параметрам</h2>
 
                             <div class="filter-body">
-                                123
+                                <div class="filter-row range">
+                                    <span class="title">Цена</span>
+                                    <div class="filter-col">
+                                        <input type="text" class="from" value="24">
+                                    </div>
+                                    <div class="filter-col">
+                                        <input type="text" class="to" value="24">
+                                    </div>
+                                    <div class="rangle-block">
+                                        <input type="text">
+                                    </div>
+                                </div>
+
+                                <div class="filter-row range">
+                                    <span class="title">Объём</span>
+                                    <div class="filter-col">
+                                        <input type="text" class="from" value="24">
+                                    </div>
+                                    <div class="filter-col">
+                                        <input type="text" class="to" value="24">
+                                    </div>
+                                    <div class="rangle-block">
+                                        <input type="text">
+                                    </div>
+                                </div>
+
+                                <div class="filter-row">
+                                    <span class="title">Горловина</span>
+
+                                    <select class="selectric" name="" id="">
+                                        <option value="" disabled>Выберите тип</option>
+                                        <option value="">Тип 1</option>
+                                        <option value="">Тип 2</option>
+                                        <option value="">Тип 3</option>
+                                    </select>
+                                </div>
+
+                                <div class="filter-row">
+                                    <span class="title">Материал</span>
+
+                                    <select class="selectric" name="" id="">
+                                        <option value="" disabled>Выберите тип</option>
+                                        <option value="">Тип 1</option>
+                                        <option value="">Тип 2</option>
+                                        <option value="">Тип 3</option>
+                                    </select>
+                                </div>
+
+                                <div class="filter-row">
+                                    <span class="title">Цвет</span>
+
+                                    <select class="selectric" name="" id="">
+                                        <option value="" disabled>Выберите тип</option>
+                                        <option value="">Тип 1</option>
+                                        <option value="">Тип 2</option>
+                                        <option value="">Тип 3</option>
+                                    </select>
+                                </div>
+
+                                <div class="filter-row">
+                                    <span class="title">Применение</span>
+
+                                    <select class="selectric" name="" id="">
+                                        <option value="" disabled>Выберите тип</option>
+                                        <option value="">Тип 1</option>
+                                        <option value="">Тип 2</option>
+                                        <option value="">Тип 3</option>
+                                    </select>
+                                </div>
+
+                                <div class="fitler-controls">
+                                    <button class="btn btnPurple">Применить</button>
+                                    <button class="btn btnFull">Сбросить</button>
+                                </div>
                             </div>
                         </section>
-
                     </div>
                 </div>
             </section>
-
-
-
         </main>
         <footer class="footer">
             <div class="footerContent">
@@ -170,6 +294,9 @@
                 </div>
             </div>
         </footer>
+
+
+
     </div>
 </body>
 
@@ -177,6 +304,7 @@
 <script type='text/javascript' src='js/jquery.selectric.min.js'></script>
 <script type='text/javascript' src='js/slick.min.js'></script>
 <script type='text/javascript' src='js/micromodal.min.js'></script>
+<script type='text/javascript' src='js/ion.rangeSlider.min.js'></script>
 <script type='text/javascript' src='js/script.js'></script>
 <script type='text/javascript' src='js/scripts-pages.js'></script>
 
