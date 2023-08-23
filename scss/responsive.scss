@@ -62,6 +62,16 @@
   .titlePage-section--docs .titlePage-section__text {
     padding-left: 24px;
   }
+
+  .secrets .list {
+    gap: 20px;
+  }
+
+  .project-page__inner {
+    .project-text {
+      width: calc(50% - 10px);
+    }
+  }
 }
 
 @media (max-width: 1023px) {
@@ -288,6 +298,71 @@
       margin-bottom: 20px;
     }
   }
+
+  .secrets .item {
+    padding: 15px;
+  }
+
+  .secrets__name {
+    font-size: 18px;
+    line-height: 20px;
+    margin-top: 15px;
+  }
+
+  .secrets__tag {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .secrets {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .secrets__tags {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .secret-item {
+    .text-section {
+      padding: 0;
+    }
+  }
+
+  .secret-item .picture {
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+  }
+
+  .secret-item .people {
+    margin-bottom: 15px;
+    padding-left: 120px;
+    min-height: 100px;
+    gap: 7px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .secret-item .btn {
+    margin-top: 25px;
+  }
+
+  .project-page__inner {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .project-page__inner .caption {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
+
+  .project-page__inner ul li + li {
+    margin-top: 10px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -505,6 +580,34 @@
   .marketing-section .item + .item {
     margin-top: 30px;
   }
+
+  .secrets .picture {
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;
+  }
+
+  .secrets .people {
+    min-height: 50px;
+    padding-left: 70px;
+    gap: 0;
+  }
+
+  .people__desc,
+  .people__name {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .secret-item .secrets__name {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .customer-right {
+    width: 100%;
+    max-width: 324px;
+  }
 }
 
 @media (max-width: 639px) {
@@ -690,6 +793,65 @@
   .contacts-info__body {
     gap: 20px 10px;
     margin-top: 30px;
+  }
+
+  .secrets .list {
+    grid-template-columns: 1fr;
+  }
+
+  .customer-inner {
+    flex-wrap: wrap;
+  }
+
+  .customer-right {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 20px;
+    text-align: center;
+
+    .text {
+      text-align: left;
+    }
+  }
+
+  .project-page__inner {
+    padding: 15px;
+
+    .project-text {
+      width: 100%;
+
+      & + .project-text {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .customer {
+    padding: 15px 0;
+  }
+
+  .project-mainText {
+    margin-bottom: 20px;
+  }
+
+  .product-project {
+    padding: 15px 0;
+  }
+
+  .customer-left {
+    margin: 0 auto;
+  }
+
+  .customer .name {
+    margin-top: 5px;
+  }
+
+  .customer .desc {
+    margin-top: 5px;
+  }
+
+  .customer-right .text {
+    margin-top: 10px;
   }
 }
 
