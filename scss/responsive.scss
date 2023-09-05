@@ -381,6 +381,10 @@
       margin-top: 0;
     }
   }
+
+  .not-pages__code {
+    max-width: 80%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -882,6 +886,10 @@
 
   .customer-right .text {
     margin-top: 10px;
+  }
+
+  .not-pages__code {
+    max-width: 100%;
   }
 }
 
