@@ -72,6 +72,18 @@
       width: calc(50% - 10px);
     }
   }
+
+  .index-page {
+    .header {
+      .headerContent-right__row {
+        padding-top: 10px;
+      }
+    }
+
+    .grettingsWrapper {
+      margin-top: -220px;
+    }
+  }
 }
 
 @media (max-width: 1023px) {
@@ -385,6 +397,12 @@
   .not-pages__code {
     max-width: 80%;
   }
+
+  .index-page {
+    .grettingsWrapper {
+      margin-top: -250px;
+    }
+  }
 }
 
 @media (max-width: 767px) {
@@ -641,6 +659,10 @@
     .list {
       gap: 15px;
     }
+  }
+
+  .index-page .header .headerContent-right__row {
+    padding-top: 0;
   }
 }
 

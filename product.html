@@ -254,182 +254,540 @@
 
                 <section class="calcWrapper">
                     <div class="container">
-                        <h2 class="siteTitle">РАССЧИТАТЬ СТОИМОСТЬ 1 БАНОЧКИ</h2>
+                        <h2 class="siteTitle">
+                            Рассчитать стоимость самостоятельно </h2>
                         <div class="calc">
-                            <form action="">
+                            <form id="calc">
                                 <div class="calc-list-wrap">
                                     <div class="selectList">
-                                        <div class="selectItem item_calc">
-                                            <div class="item_calc__header">
-                                                <span class="name"><span class="num">1.</span>Продукт</span>
-                                            </div>
-                                            <div class="item_calc__discript">
-                                                <span class="desc">Выберите проудукт для производства</span>
-                                            </div>
-                                            <div class="item_calc__selected">
-                                                Крем
-                                            </div>
-                                            <div class="item_calc__select">
-                                                <div class="item_btn disabled" data-ar="1">Крем</div>
-                                                <div class="item_btn selected" data-ar="2">Крем</div>
-                                                <div class="item_btn disabled" data-ar="3">Крем</div>
-                                            </div>
-                                            <div class="key_next" disabled="disabled"></div>
-                                        </div>
-                                        <div class="selectItem item_calc">
-                                            <div class="item_calc__header">
-                                                <span class="name"><span class="num">2.</span>База</span>
-                                            </div>
-                                            <div class="item_calc__discript">
-                                                <span class="desc">Это базовые элементы</span>
-                                            </div>
-                                            <div class="item_calc__selected">
-                                                Гелевая экобаза
-                                            </div>
-                                            <div class="item_calc__select">
-                                                <div class="item_btn disabled" data-ar="1">Гелевая экобаза</div>
-                                                <div class="item_btn selected" data-ar="2">Гелевая экобаза</div>
-                                                <div class="item_btn disabled" data-ar="3">Гелевая экобаза</div>
-                                            </div>
-                                            <div class="key_next" disabled="disabled"></div>
-                                        </div>
-                                        <div class="selectItem item_calc">
-                                            <div class="item_calc__header">
-                                                <span class="name"><span class="num">3.</span>Экстракты</span>
-                                            </div>
-                                            <div class="item_calc__discript">
-                                                <span class="desc">Выберите до 10 экстрактов, зажав Ctrl</span>
-                                            </div>
-                                            <div class="item_calc__selected">
-                                                Ананас экстракт
-                                            </div>
-                                            <div class="item_calc__select">
-                                                <div class="item_btn disabled" data-ar="1">Ананас экстракт</div>
-                                                <div class="item_btn selected" data-ar="2">Ананас экстракт</div>
-                                                <div class="item_btn disabled" data-ar="3">Ананас экстракт</div>
-                                            </div>
-                                            <div class="key_next" disabled="disabled"></div>
-                                        </div>
-                                        <div class="selectItem item_calc">
-                                            <div class="item_calc__header">
-                                                <span class="name"><span class="num">4.</span>Функциональные
-                                                    добавки</span>
-                                            </div>
-                                            <div class="item_calc__discript">
-                                                <span class="desc">Выберите функциональные добавки</span>
-                                            </div>
-                                            <div class="item_calc__selected">
-                                                Капсикум (красный перец)
-                                            </div>
-                                            <div class="item_calc__select">
-                                                <div class="item_btn disabled" data-ar="1">Капсикум (красный перец)
-                                                </div>
-                                                <div class="item_btn selected" data-ar="2">Капсикум (красный перец)
-                                                </div>
-                                                <div class="item_btn disabled" data-ar="3">Капсикум (красный перец)
-                                                </div>
-                                            </div>
-                                            <div class="key_next" disabled="disabled"></div>
-                                        </div>
-                                        <div class="selectItem item_calc">
-                                            <div class="item_calc__header">
-                                                <span class="name"><span class="num">5.</span>Консервант</span>
 
+                                        <div class="selectItem">
+                                            <span class="beforedisable"></span>
+                                            <span class="name"><span class="num">1.</span>Продукт</span>
+                                            <span class="desc">Выберите проудукт для производства</span>
+                                            <div class="inputWrapper">
+                                                <div class="selectric-wrapper selectric-selectric selectric-s_one">
+                                                    <div class="selectric-hide-select"><select name="Продукт"
+                                                            class="selectric s_one" tabindex="-1">
+                                                            <option value="">Не выбрано</option>
+                                                            <option value="Крем" selected="">Крем</option>
+                                                            <option value="Масло">Масло</option>
+                                                            <option
+                                                                value="Пеномойка (шампунь, гель для душа, мыло для рук...)">
+                                                                Пеномойка (шампунь, гель для душа, мыло для рук...)
+                                                            </option>
+                                                        </select></div>
+                                                    <div class="selectric"><span class="label">Крем</span><b
+                                                            class="button">▾</b></div>
+                                                    <div class="selectric-items" tabindex="-1">
+                                                        <div class="selectric-scroll">
+                                                            <ul>
+                                                                <li data-index="0" class="">Не выбрано</li>
+                                                                <li data-index="1" class="selected">Крем</li>
+                                                                <li data-index="2" class="">Масло</li>
+                                                                <li data-index="3" class="last">Пеномойка (шампунь, гель
+                                                                    для
+                                                                    душа, мыло для рук...)</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div><input class="selectric-input" tabindex="0">
+                                                </div>
                                             </div>
-                                            <div class="item_calc__discript">
-                                                <span class="desc">Добавляем консервант</span>
+                                        </div>
 
+                                        <div class="selectItem">
+                                            <span class="beforedisable"></span>
+                                            <span class="name"><span class="num">2.</span>База</span>
+                                            <span class="desc">Это базовые элементы</span>
+                                            <div class="inputWrapper">
+                                                <div class="selectric-wrapper selectric-selectric selectric-s_one">
+                                                    <div class="selectric-hide-select"><select name="База"
+                                                            class="selectric s_one" tabindex="-1">
+                                                            <option value="">Не выбрано</option>
+                                                            <option value="Гелевая универсальная" selected="">Гелевая
+                                                                универсальная</option>
+                                                            <option value="Гелевая экобаза">Гелевая экобаза</option>
+                                                            <option value="Лямеллярная база">Лямеллярная база</option>
+                                                            <option value="Универсальная органика">Универсальная
+                                                                органика
+                                                            </option>
+                                                            <option value="Экобаза натуральная">Экобаза натуральная
+                                                            </option>
+                                                            <option value="Экобаза натуральная обратная эмульсия">
+                                                                Экобаза
+                                                                натуральная обратная эмульсия</option>
+                                                        </select></div>
+                                                    <div class="selectric"><span class="label">Гелевая
+                                                            универсальная</span><b class="button">▾</b></div>
+                                                    <div class="selectric-items" tabindex="-1">
+                                                        <div class="selectric-scroll">
+                                                            <ul>
+                                                                <li data-index="0" class="">Не выбрано</li>
+                                                                <li data-index="1" class="selected">Гелевая
+                                                                    универсальная</li>
+                                                                <li data-index="2" class="">Гелевая экобаза</li>
+                                                                <li data-index="3" class="">Лямеллярная база</li>
+                                                                <li data-index="4" class="">Универсальная органика</li>
+                                                                <li data-index="5" class="">Экобаза натуральная</li>
+                                                                <li data-index="6" class="last">Экобаза натуральная
+                                                                    обратная
+                                                                    эмульсия</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div><input class="selectric-input" tabindex="0">
+                                                </div>
                                             </div>
-                                            <div class="item_calc__selected">
-                                                Отдушка косметическая
-                                            </div>
-                                            <div class="item_calc__select">
-                                                <div class="item_btn disabled" data-ar="1">Отдушка косметическая</div>
-                                                <div class="item_btn selected" data-ar="2">Отдушка косметическая</div>
-                                                <div class="item_btn disabled" data-ar="3">Отдушка косметическая</div>
-                                            </div>
-                                            <div class="key_next" disabled="disabled"></div>
                                         </div>
-                                        <div class="selectItem item_calc">
-                                            <div class="item_calc__header">
-                                                <span class="name"><span class="num">6.</span>Аромат</span>
-                                            </div>
-                                            <div class="item_calc__discript">
-                                                <span class="desc">Выберите подходящий аромат</span>
 
+                                        <div class="selectItem">
+                                            <span class="beforedisable"></span>
+                                            <span class="name"><span class="num">3.</span>Экстракты</span>
+                                            <span class="desc">Выберите до 10 экстрактов</span>
+                                            <div class="inputWrapper">
+                                                <div class="selectric-wrapper selectric-selectric selectric-s_more">
+                                                    <div class="selectric-hide-select"><select name="Экстракты[]"
+                                                            class="selectric s_more" multiple="multiple" tabindex="-1">
+                                                            <option value="">Не выбрано</option>
+                                                            <option value="skip">Пропустить</option>
+                                                            <option value="Ананас экстракт" selected="">Ананас экстракт
+                                                            </option>
+                                                            <option value="Боярышника экстракт">Боярышника экстракт
+                                                            </option>
+                                                            <option value="Гингко-билобы  экстракт">Гингко-билобы
+                                                                экстракт
+                                                            </option>
+                                                            <option value="Горчицы  экстракт">Горчицы экстракт</option>
+                                                            <option value="Готу-колы экстракт">Готу-колы экстракт
+                                                            </option>
+                                                            <option value="Донника экстракт">Донника экстракт</option>
+                                                            <option value="Душицы экстракт">Душицы экстракт</option>
+                                                            <option value="Иван-чая экстракт">Иван-чая экстракт</option>
+                                                            <option value="Имбиря  экстракт">Имбиря экстракт</option>
+                                                            <option value="Исландского мха  экстракт">Исландского мха
+                                                                экстракт
+                                                            </option>
+                                                            <option value="Календулы  экстракт">Календулы экстракт
+                                                            </option>
+                                                            <option value="Калины (ягоды) экстракт">Калины (ягоды)
+                                                                экстракт
+                                                            </option>
+                                                            <option value="Каштана экстракт">Каштана экстракт</option>
+                                                            <option value="Кипрея экстракт">Кипрея экстракт</option>
+                                                            <option value="Клубники экстракт">Клубники экстракт</option>
+                                                            <option value="Конского каштана экстракт">Конского каштана
+                                                                экстракт
+                                                            </option>
+                                                            <option value="Крапивы экстракт">Крапивы экстракт</option>
+                                                            <option value="Лавра экстракт">Лавра экстракт</option>
+                                                            <option value="Ламинарии экстракт">Ламинарии экстракт
+                                                            </option>
+                                                            <option value="Лимонника экстракт">Лимонника экстракт
+                                                            </option>
+                                                            <option value="Липы экстракт">Липы экстракт</option>
+                                                            <option value="Листа брусники экстракт">Листа брусники
+                                                                экстракт
+                                                            </option>
+                                                            <option value="Листа малины экстракт">Листа малины экстракт
+                                                            </option>
+                                                            <option value="Листа смородины экстракт">Листа смородины
+                                                                экстракт
+                                                            </option>
+                                                            <option value="Листа черной смородины экстракт">Листа черной
+                                                                смородины экстракт</option>
+                                                            <option value="Мать-и-мачехи экстракт">Мать-и-мачехи
+                                                                экстракт
+                                                            </option>
+                                                            <option value="Мелиссы экстракт">Мелиссы экстракт</option>
+                                                            <option value="Одуванчика экстракт">Одуванчика экстракт
+                                                            </option>
+                                                            <option value="Окопника экстракт">Окопника экстракт</option>
+                                                            <option value="Персика экстракт">Персика экстракт</option>
+                                                            <option value="Розмарина экстракт">Розмарина экстракт
+                                                            </option>
+                                                            <option value="Розы экстракт">Розы экстракт</option>
+                                                            <option value="Ромашки экстракт">Ромашки экстракт</option>
+                                                            <option value="Руты экстракт">Руты экстракт</option>
+                                                            <option value="Сабельника экстракт">Сабельника экстракт
+                                                            </option>
+                                                            <option value="Софоры японской экстракт">Софоры японской
+                                                                экстракт
+                                                            </option>
+                                                            <option value="Укропа экстракт">Укропа экстракт</option>
+                                                            <option value="Фукуса экстракт">Фукуса экстракт</option>
+                                                            <option value="Хвоща экстракт">Хвоща экстракт</option>
+                                                            <option value="Хмеля экстракт">Хмеля экстракт</option>
+                                                            <option value="Чабреца экстракт">Чабреца экстракт</option>
+                                                            <option value="Чистотела экстракт">Чистотела экстракт
+                                                            </option>
+                                                            <option value="Шалфея экстракт">Шалфея экстракт</option>
+                                                            <option value="Эвкалипта экстракт">Эвкалипта экстракт
+                                                            </option>
+                                                            <option value="Яблока экстракт">Яблока экстракт</option>
+                                                        </select></div>
+                                                    <div class="selectric"><span class="label">Ананас экстракт</span><b
+                                                            class="button">▾</b></div>
+                                                    <div class="selectric-items" tabindex="-1">
+                                                        <div class="selectric-scroll">
+                                                            <ul>
+                                                                <li data-index="0" class="">Не выбрано</li>
+                                                                <li data-index="1" class="">Пропустить</li>
+                                                                <li data-index="2" class="selected">Ананас экстракт</li>
+                                                                <li data-index="3" class="">Боярышника экстракт</li>
+                                                                <li data-index="4" class="">Гингко-билобы экстракт</li>
+                                                                <li data-index="5" class="">Горчицы экстракт</li>
+                                                                <li data-index="6" class="">Готу-колы экстракт</li>
+                                                                <li data-index="7" class="">Донника экстракт</li>
+                                                                <li data-index="8" class="">Душицы экстракт</li>
+                                                                <li data-index="9" class="">Иван-чая экстракт</li>
+                                                                <li data-index="10" class="">Имбиря экстракт</li>
+                                                                <li data-index="11" class="">Исландского мха экстракт
+                                                                </li>
+                                                                <li data-index="12" class="">Календулы экстракт</li>
+                                                                <li data-index="13" class="">Калины (ягоды) экстракт
+                                                                </li>
+                                                                <li data-index="14" class="">Каштана экстракт</li>
+                                                                <li data-index="15" class="">Кипрея экстракт</li>
+                                                                <li data-index="16" class="">Клубники экстракт</li>
+                                                                <li data-index="17" class="">Конского каштана экстракт
+                                                                </li>
+                                                                <li data-index="18" class="">Крапивы экстракт</li>
+                                                                <li data-index="19" class="">Лавра экстракт</li>
+                                                                <li data-index="20" class="">Ламинарии экстракт</li>
+                                                                <li data-index="21" class="">Лимонника экстракт</li>
+                                                                <li data-index="22" class="">Липы экстракт</li>
+                                                                <li data-index="23" class="">Листа брусники экстракт
+                                                                </li>
+                                                                <li data-index="24" class="">Листа малины экстракт</li>
+                                                                <li data-index="25" class="">Листа смородины экстракт
+                                                                </li>
+                                                                <li data-index="26" class="">Листа черной смородины
+                                                                    экстракт
+                                                                </li>
+                                                                <li data-index="27" class="">Мать-и-мачехи экстракт</li>
+                                                                <li data-index="28" class="">Мелиссы экстракт</li>
+                                                                <li data-index="29" class="">Одуванчика экстракт</li>
+                                                                <li data-index="30" class="">Окопника экстракт</li>
+                                                                <li data-index="31" class="">Персика экстракт</li>
+                                                                <li data-index="32" class="">Розмарина экстракт</li>
+                                                                <li data-index="33" class="">Розы экстракт</li>
+                                                                <li data-index="34" class="">Ромашки экстракт</li>
+                                                                <li data-index="35" class="">Руты экстракт</li>
+                                                                <li data-index="36" class="">Сабельника экстракт</li>
+                                                                <li data-index="37" class="">Софоры японской экстракт
+                                                                </li>
+                                                                <li data-index="38" class="">Укропа экстракт</li>
+                                                                <li data-index="39" class="">Фукуса экстракт</li>
+                                                                <li data-index="40" class="">Хвоща экстракт</li>
+                                                                <li data-index="41" class="">Хмеля экстракт</li>
+                                                                <li data-index="42" class="">Чабреца экстракт</li>
+                                                                <li data-index="43" class="">Чистотела экстракт</li>
+                                                                <li data-index="44" class="">Шалфея экстракт</li>
+                                                                <li data-index="45" class="">Эвкалипта экстракт</li>
+                                                                <li data-index="46" class="last">Яблока экстракт</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div><input class="selectric-input" tabindex="0">
+                                                </div>
                                             </div>
-                                            <div class="item_calc__selected">
-                                                Натуральный
-                                            </div>
-                                            <div class="item_calc__select">
-                                                <div class="item_btn disabled" data-ar="1">Натуральный</div>
-                                                <div class="item_btn selected" data-ar="2">Натуральный</div>
-                                                <div class="item_btn disabled" data-ar="3">Натуральный</div>
-                                            </div>
-                                            <div class="key_next" disabled="disabled"></div>
                                         </div>
-                                        <div class="selectItem item_calc show_element">
-                                            <div class="item_calc__header">
-                                                <span class="name"><span class="num">7.</span>Флаконы</span>
-                                            </div>
-                                            <div class="item_calc__discript">
-                                                <span class="desc">Нужно выбрать объём тары</span>
-                                            </div>
-                                            <div class="item_calc__selected">
-                                                Натуральный
-                                            </div>
-                                            <div class="item_calc__select">
-                                                <div class="item_btn disabled" data-ar="1">Банка ПЭТ+крышка, 250 мл
+
+                                        <div class="selectItem">
+                                            <span class="beforedisable"></span>
+                                            <span class="name"><span class="num">4.</span>Антиоксиданты</span>
+                                            <span class="desc">Выберите антиоксиданты</span>
+                                            <div class="inputWrapper">
+                                                <div class="selectric-wrapper selectric-selectric selectric-s_one">
+                                                    <div class="selectric-hide-select"><select name="Антиоксиданты"
+                                                            class="selectric s_one" tabindex="-1">
+                                                            <option value="">Не выбрано</option>
+                                                            <option value="skip" selected="">Пропустить</option>
+                                                            <option value="Витамин Е">Витамин Е</option>
+                                                            <option value="Гриндокс">Гриндокс</option>
+                                                        </select></div>
+                                                    <div class="selectric"><span class="label">Пропустить</span><b
+                                                            class="button">▾</b></div>
+                                                    <div class="selectric-items" tabindex="-1">
+                                                        <div class="selectric-scroll">
+                                                            <ul>
+                                                                <li data-index="0" class="">Не выбрано</li>
+                                                                <li data-index="1" class="selected">Пропустить</li>
+                                                                <li data-index="2" class="">Витамин Е</li>
+                                                                <li data-index="3" class="last">Гриндокс</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div><input class="selectric-input" tabindex="0">
                                                 </div>
-                                                <div class="item_btn selected" data-ar="2">Банка ПЭТ+крышка, 250 мл
-                                                </div>
-                                                <div class="item_btn disabled" data-ar="3">Банка ПЭТ+крышка, 250 мл
-                                                </div>
                                             </div>
-                                            <div class="key_next" disabled="disabled"></div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="resultCalc">
-                                    <div class="resultDesc">
-                                        <span class="title">Описание</span>
-                                        <ol>
-                                            <li>Крем</li>
-                                            <li> Гелевая экобаза</li>
-                                            <li> Ананас экстракт</li>
-                                            <li> Капсикум (красный перец)</li>
-                                            <li>Натуральный</li>
-                                            <li>Отдушка косметическая</li>
-                                            <li>Банка ПЭТ+крышка, 250 мл</li>
-                                        </ol>
-                                    </div>
-                                    <div class="result">
-                                        <span class="value">Сумма в итоге: <span>284 ₽</span></span>
-                                        <ul class="info">
-                                            <li>
-                                                <span class="tit">Стоимость ингредиентов за 1 л.</span>
-                                                <span class="data">133 ₽</span>
-                                            </li>
-                                            <li>
-                                                <span class="tit">Стоимость ингредиентов за выбранный миллилитраж</span>
-                                                <span class="data">34 ₽</span>
-                                            </li>
-                                            <li>
-                                                <span class="tit">Стоимость тары</span>
-                                                <span class="data">50 ₽</span>
-                                            </li>
-                                            <li>
-                                                <span class="tit">Стоимость работы</span>
-                                                <span class="data">200 ₽</span>
-                                            </li>
-                                        </ul>
-                                        <div class="contols">
-                                            <a href="#" class="btn btnFull">Сбросить</a>
-                                            <a href="#" class="btn btnPurple">Подтвердить</a>
+
+                                        <div class="selectItem">
+                                            <span class="beforedisable"></span>
+                                            <span class="name"><span class="num">5.</span>Функциональные добавки</span>
+                                            <span class="desc">Выберите функциональные добавки</span>
+                                            <div class="inputWrapper">
+                                                <div class="selectric-wrapper selectric-selectric selectric-s_one">
+                                                    <div class="selectric-hide-select"><select name="Добавки"
+                                                            class="selectric s_one" tabindex="-1">
+                                                            <option value="">Не выбрано</option>
+                                                            <option value="skip">Пропустить</option>
+                                                            <option value="Гидролат">Гидролат</option>
+                                                            <option value="Камфора" selected="">Камфора</option>
+                                                            <option value="Капсикум (красный перец)">Капсикум (красный
+                                                                перец)
+                                                            </option>
+                                                            <option value="Ланолин">Ланолин</option>
+                                                            <option value="Ментол">Ментол</option>
+                                                            <option value="Перламутровый агент">Перламутровый агент
+                                                            </option>
+                                                            <option value="УФ-фильтры (SPF 30-50)">УФ-фильтры (SPF
+                                                                30-50)
+                                                            </option>
+                                                            <option value="Хлоргекседин">Хлоргекседин</option>
+                                                            <option value="Цинк оксид">Цинк оксид</option>
+                                                            <option value="Шиммер">Шиммер</option>
+                                                            <option value="Эластин+колаген">Эластин+колаген</option>
+                                                            <option value="Эмолент (придает бархатистость)">Эмолент
+                                                                (придает
+                                                                бархатистость)</option>
+                                                        </select></div>
+                                                    <div class="selectric"><span class="label">Камфора</span><b
+                                                            class="button">▾</b></div>
+                                                    <div class="selectric-items" tabindex="-1">
+                                                        <div class="selectric-scroll">
+                                                            <ul>
+                                                                <li data-index="0" class="">Не выбрано</li>
+                                                                <li data-index="1" class="">Пропустить</li>
+                                                                <li data-index="2" class="">Гидролат</li>
+                                                                <li data-index="3" class="selected">Камфора</li>
+                                                                <li data-index="4" class="">Капсикум (красный перец)
+                                                                </li>
+                                                                <li data-index="5" class="">Ланолин</li>
+                                                                <li data-index="6" class="">Ментол</li>
+                                                                <li data-index="7" class="">Перламутровый агент</li>
+                                                                <li data-index="8" class="">УФ-фильтры (SPF 30-50)</li>
+                                                                <li data-index="9" class="">Хлоргекседин</li>
+                                                                <li data-index="10" class="">Цинк оксид</li>
+                                                                <li data-index="11" class="">Шиммер</li>
+                                                                <li data-index="12" class="">Эластин+колаген</li>
+                                                                <li data-index="13" class="last">Эмолент (придает
+                                                                    бархатистость)
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div><input class="selectric-input" tabindex="0">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="selectItem">
+                                            <span class="beforedisable"></span>
+                                            <span class="name"><span class="num">6.</span>Консервант</span>
+                                            <span class="desc">Добавляем консервант</span>
+                                            <div class="inputWrapper">
+                                                <div class="selectric-wrapper selectric-selectric selectric-s_one">
+                                                    <div class="selectric-hide-select"><select name="Консервант"
+                                                            class="selectric s_one" tabindex="-1">
+                                                            <option value="">Не выбрано</option>
+                                                            <option value="skip">Пропустить</option>
+                                                            <option value="Натуральный" selected="">Натуральный</option>
+                                                            <option value="Синтетический">Синтетический</option>
+                                                        </select></div>
+                                                    <div class="selectric"><span class="label">Натуральный</span><b
+                                                            class="button">▾</b></div>
+                                                    <div class="selectric-items" tabindex="-1">
+                                                        <div class="selectric-scroll">
+                                                            <ul>
+                                                                <li data-index="0" class="">Не выбрано</li>
+                                                                <li data-index="1" class="">Пропустить</li>
+                                                                <li data-index="2" class="selected">Натуральный</li>
+                                                                <li data-index="3" class="last">Синтетический</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div><input class="selectric-input" tabindex="0">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="selectItem">
+                                            <span class="beforedisable"></span>
+                                            <span class="name"><span class="num">7.</span>Аромат</span>
+                                            <span class="desc">Выберите подходящий аромат</span>
+                                            <div class="inputWrapper">
+                                                <div class="selectric-wrapper selectric-selectric selectric-s_one">
+                                                    <div class="selectric-hide-select"><select name="Аромат"
+                                                            class="selectric s_one" tabindex="-1">
+                                                            <option value="">Не выбрано</option>
+                                                            <option value="skip" selected="">Пропустить</option>
+                                                            <option value="Отдушка косметическая">Отдушка косметическая
+                                                            </option>
+                                                            <option value="Смесь эфирных масел">Смесь эфирных масел
+                                                            </option>
+                                                        </select></div>
+                                                    <div class="selectric"><span class="label">Пропустить</span><b
+                                                            class="button">▾</b></div>
+                                                    <div class="selectric-items" tabindex="-1">
+                                                        <div class="selectric-scroll">
+                                                            <ul>
+                                                                <li data-index="0" class="">Не выбрано</li>
+                                                                <li data-index="1" class="selected">Пропустить</li>
+                                                                <li data-index="2" class="">Отдушка косметическая</li>
+                                                                <li data-index="3" class="last">Смесь эфирных масел</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div><input class="selectric-input" tabindex="0">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="selectItem">
+                                            <span class="beforedisable"></span>
+                                            <span class="name"><span class="num">8.</span>Флаконы</span>
+                                            <span class="desc">Нужно выбрать объём тары</span>
+                                            <div class="inputWrapper">
+                                                <div class="selectric-wrapper selectric-selectric selectric-s_one">
+                                                    <div class="selectric-hide-select"><select name="Флаконы"
+                                                            class="selectric s_one" tabindex="-1">
+                                                            <option value="">Не выбрано</option>
+                                                            <option value="Банка ПЭТ+крышка, 100 мл">Банка ПЭТ+крышка,
+                                                                100 мл
+                                                            </option>
+                                                            <option value="Банка ПЭТ+крышка, 150 мл">Банка ПЭТ+крышка,
+                                                                150 мл
+                                                            </option>
+                                                            <option value="Банка ПЭТ+крышка, 250 мл" selected="">Банка
+                                                                ПЭТ+крышка, 250 мл</option>
+                                                            <option value="Банка ПЭТ+крышка, 350 мл">Банка ПЭТ+крышка,
+                                                                350 мл
+                                                            </option>
+                                                            <option value="Банка ПЭТ+крышка, 500 мл">Банка ПЭТ+крышка,
+                                                                500 мл
+                                                            </option>
+                                                            <option value="Банка ПЭТ+крышка, 80 мл">Банка ПЭТ+крышка, 80
+                                                                мл
+                                                            </option>
+                                                            <option value="Своя упаковка">Своя упаковка</option>
+                                                            <option value="Флакон ПЭТ+дозатор, 30 мл">Флакон
+                                                                ПЭТ+дозатор, 30 мл
+                                                            </option>
+                                                            <option value="Флакон ПЭТ+дозатор,, 100 мл">Флакон
+                                                                ПЭТ+дозатор,, 100
+                                                                мл</option>
+                                                            <option value="Флакон ПЭТ+дозатор,, 150 мл">Флакон
+                                                                ПЭТ+дозатор,, 150
+                                                                мл</option>
+                                                            <option value="Флакон ПЭТ+дозатор,, 200 мл">Флакон
+                                                                ПЭТ+дозатор,, 200
+                                                                мл</option>
+                                                            <option value="Флакон ПЭТ+дозатор,, 250 мл">Флакон
+                                                                ПЭТ+дозатор,, 250
+                                                                мл</option>
+                                                            <option value="Флакон ПЭТ+дозатор,, 350 мл">Флакон
+                                                                ПЭТ+дозатор,, 350
+                                                                мл</option>
+                                                            <option value="Флакон ПЭТ+дозатор,, 50 мл">Флакон
+                                                                ПЭТ+дозатор,, 50
+                                                                мл</option>
+                                                            <option value="Флакон ПЭТ+дозатор,, 75 мл">Флакон
+                                                                ПЭТ+дозатор,, 75
+                                                                мл</option>
+                                                            <option value="Флакон ПЭТ+крышка, 15 мл">Флакон ПЭТ+крышка,
+                                                                15 мл
+                                                            </option>
+                                                            <option value="Флакон стекло+дозатор,, 30 мл">Флакон
+                                                                стекло+дозатор,, 30 мл</option>
+                                                            <option value="Флакон стекло+дозатор,, 50 мл">Флакон
+                                                                стекло+дозатор,, 50 мл</option>
+                                                        </select></div>
+                                                    <div class="selectric"><span class="label">Банка ПЭТ+крышка, 250
+                                                            мл</span><b class="button">▾</b></div>
+                                                    <div class="selectric-items" tabindex="-1">
+                                                        <div class="selectric-scroll">
+                                                            <ul>
+                                                                <li data-index="0" class="">Не выбрано</li>
+                                                                <li data-index="1" class="">Банка ПЭТ+крышка, 100 мл
+                                                                </li>
+                                                                <li data-index="2" class="">Банка ПЭТ+крышка, 150 мл
+                                                                </li>
+                                                                <li data-index="3" class="selected">Банка ПЭТ+крышка,
+                                                                    250 мл
+                                                                </li>
+                                                                <li data-index="4" class="">Банка ПЭТ+крышка, 350 мл
+                                                                </li>
+                                                                <li data-index="5" class="">Банка ПЭТ+крышка, 500 мл
+                                                                </li>
+                                                                <li data-index="6" class="">Банка ПЭТ+крышка, 80 мл</li>
+                                                                <li data-index="7" class="">Своя упаковка</li>
+                                                                <li data-index="8" class="">Флакон ПЭТ+дозатор, 30 мл
+                                                                </li>
+                                                                <li data-index="9" class="">Флакон ПЭТ+дозатор,, 100 мл
+                                                                </li>
+                                                                <li data-index="10" class="">Флакон ПЭТ+дозатор,, 150 мл
+                                                                </li>
+                                                                <li data-index="11" class="">Флакон ПЭТ+дозатор,, 200 мл
+                                                                </li>
+                                                                <li data-index="12" class="">Флакон ПЭТ+дозатор,, 250 мл
+                                                                </li>
+                                                                <li data-index="13" class="">Флакон ПЭТ+дозатор,, 350 мл
+                                                                </li>
+                                                                <li data-index="14" class="">Флакон ПЭТ+дозатор,, 50 мл
+                                                                </li>
+                                                                <li data-index="15" class="">Флакон ПЭТ+дозатор,, 75 мл
+                                                                </li>
+                                                                <li data-index="16" class="">Флакон ПЭТ+крышка, 15 мл
+                                                                </li>
+                                                                <li data-index="17" class="">Флакон стекло+дозатор,, 30
+                                                                    мл</li>
+                                                                <li data-index="18" class="last">Флакон стекло+дозатор,,
+                                                                    50 мл
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div><input class="selectric-input" tabindex="0">
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </form>
+                            <div class="resultCalc">
+                                <div class="resultDesc">
+                                    <span class="title">Описание</span>
+                                    <ol>
+                                        <li>Крем</li>
+                                        <li>Гелевая универсальная</li>
+                                        <li>Ананас экстракт; </li>
+                                        <li>Камфора</li>
+                                        <li>Натуральный</li>
+                                        <li>Банка ПЭТ+крышка, 250 мл</li>
+                                    </ol>
+                                </div>
+                                <div class="result">
+                                    <span class="value">Сумма в итоге: <span>312 ₽</span></span>
+                                    <ul class="info">
+                                        <li>
+                                            <span class="tit">Стоимость ингредиентов за 1 л.</span>
+                                            <span class="data">246 ₽</span>
+                                        </li>
+                                        <li>
+                                            <span class="tit">Стоимость ингредиентов за выбранный миллилитраж</span>
+                                            <span class="data">62 ₽</span>
+                                        </li>
+                                        <li>
+                                            <span class="tit">Стоимость тары</span>
+                                            <span class="data">50 ₽</span>
+                                        </li>
+                                        <li>
+                                            <span class="tit">Стоимость работы</span>
+                                            <span class="data">200 ₽</span>
+                                        </li>
+                                    </ul>
+                                    <div class="contols">
+                                        <a href="javascript:void(0);" class="btn btnFull" data-reset="">Сбросить</a>
+                                        <a href="javascript:void(0);" class="btn btnPurple" data-custom-open="modal-1"
+                                            data-order="{&quot;\u041f\u0440\u043e\u0434\u0443\u043a\u0442&quot;:&quot;\u041a\u0440\u0435\u043c&quot;,&quot;\u0411\u0430\u0437\u0430&quot;:&quot;\u0413\u0435\u043b\u0435\u0432\u0430\u044f \u0443\u043d\u0438\u0432\u0435\u0440\u0441\u0430\u043b\u044c\u043d\u0430\u044f&quot;,&quot;\u042d\u043a\u0441\u0442\u0440\u0430\u043a\u0442\u044b&quot;:&quot;\u0410\u043d\u0430\u043d\u0430\u0441 \u044d\u043a\u0441\u0442\u0440\u0430\u043a\u0442; &quot;,&quot;\u0414\u043e\u0431\u0430\u0432\u043a\u0438&quot;:&quot;\u041a\u0430\u043c\u0444\u043e\u0440\u0430&quot;,&quot;\u041a\u043e\u043d\u0441\u0435\u0440\u0432\u0430\u043d\u0442&quot;:&quot;\u041d\u0430\u0442\u0443\u0440\u0430\u043b\u044c\u043d\u044b\u0439&quot;,&quot;\u0424\u043b\u0430\u043a\u043e\u043d\u044b&quot;:&quot;\u0411\u0430\u043d\u043a\u0430 \u041f\u042d\u0422+\u043a\u0440\u044b\u0448\u043a\u0430, 250 \u043c\u043b&quot;}">Подтвердить</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>

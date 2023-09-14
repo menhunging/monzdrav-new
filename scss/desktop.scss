@@ -2168,3 +2168,24 @@
   img {
   }
 }
+
+.index-page{
+  .header{
+    padding: 0;
+
+    .container{
+      background-color: #fff;
+      @include border-radius(20px);
+      padding: 0 20px 20px 0;
+      margin-top: 20px;
+    }
+
+    .headerContent{
+      background: transparent;
+    }
+  }
+
+  .grettingsWrapper{
+    margin-top: -186px;
+  }
+}
